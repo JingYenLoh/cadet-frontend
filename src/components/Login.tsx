@@ -26,7 +26,7 @@ export type OwnProps = {
   providerId?: string;
 };
 
-const Login: React.SFC<LoginProps> = props => {
+const Login: React.FunctionComponent<LoginProps> = props => {
   React.useEffect(() => {
     if (props.code) {
       props.handleFetchAuth(props.code, props.providerId);
